@@ -23,7 +23,7 @@ selected_council = st.sidebar.selectbox("Select Local Authority", councils)
 region_df = df[df['local_authority'] == selected_council]
 
 # 3. Main Dashboard UI
-st.title(f"❤️ Net Zero Health Benefits: {selected_council}")
+st.title(f" Net Zero Health Benefits: {selected_council}")
 
 # Total benefit is the 'sum' column from your image
 total_val = region_df['sum'].sum()
